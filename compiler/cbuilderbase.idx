@@ -1,0 +1,30 @@
+nimTitle	cbuilderbase	cbuilderbase.html	module cbuilderbase		0
+nim	Snippet	cbuilderbase.html#Snippet	type Snippet		4
+nim	Builder	cbuilderbase.html#Builder	object Builder		5
+nim	newBuilder	cbuilderbase.html#newBuilder.t,string	template newBuilder(s: string): Builder		8
+nim	extract	cbuilderbase.html#extract,Builder	proc extract(builder: Builder): Snippet		11
+nim	add	cbuilderbase.html#add,Builder,string	proc add(builder: var Builder; s: string)		14
+nim	add	cbuilderbase.html#add,Builder,char	proc add(builder: var Builder; s: char)		17
+nim	addIntValue	cbuilderbase.html#addIntValue,Builder,int	proc addIntValue(builder: var Builder; val: int)		20
+nim	addIntValue	cbuilderbase.html#addIntValue,Builder,int64	proc addIntValue(builder: var Builder; val: int64)		23
+nim	addIntValue	cbuilderbase.html#addIntValue,Builder,uint64	proc addIntValue(builder: var Builder; val: uint64)		26
+nim	addIntValue	cbuilderbase.html#addIntValue,Builder,Int128	proc addIntValue(builder: var Builder; val: Int128)		29
+nim	cIntValue	cbuilderbase.html#cIntValue.t,int	template cIntValue(val: int): Snippet		32
+nim	cIntValue	cbuilderbase.html#cIntValue.t,int64	template cIntValue(val: int64): Snippet		33
+nim	cIntValue	cbuilderbase.html#cIntValue.t,uint64	template cIntValue(val: uint64): Snippet		34
+nim	cIntValue	cbuilderbase.html#cIntValue.t,Int128	template cIntValue(val: Int128): Snippet		35
+nim	addFloatValue	cbuilderbase.html#addFloatValue,Builder,float	proc addFloatValue(builder: var Builder; val: float)		39
+nim	cFloatValue	cbuilderbase.html#cFloatValue.t,float	template cFloatValue(val: float): Snippet		42
+nim	addInt64Literal	cbuilderbase.html#addInt64Literal,Builder,BiggestInt	proc addInt64Literal(result: var Builder; i: BiggestInt)		44
+nim	addUint64Literal	cbuilderbase.html#addUint64Literal,Builder,uint64	proc addUint64Literal(result: var Builder; i: uint64)		50
+nim	addIntLiteral	cbuilderbase.html#addIntLiteral,Builder,BiggestInt	proc addIntLiteral(result: var Builder; i: BiggestInt)		53
+nim	addIntLiteral	cbuilderbase.html#addIntLiteral,Builder,Int128	proc addIntLiteral(result: var Builder; i: Int128)		64
+nim	cInt64Literal	cbuilderbase.html#cInt64Literal,BiggestInt	proc cInt64Literal(i: BiggestInt): Snippet		67
+nim	cUint64Literal	cbuilderbase.html#cUint64Literal,uint64	proc cUint64Literal(i: uint64): Snippet		73
+nim	cIntLiteral	cbuilderbase.html#cIntLiteral,BiggestInt	proc cIntLiteral(i: BiggestInt): Snippet		76
+nim	cIntLiteral	cbuilderbase.html#cIntLiteral,Int128	proc cIntLiteral(i: Int128): Snippet		87
+nimgrp	cintliteral	cbuilderbase.html#cIntLiteral-procs-all	proc		76
+nimgrp	addintvalue	cbuilderbase.html#addIntValue-procs-all	proc		20
+nimgrp	addintliteral	cbuilderbase.html#addIntLiteral-procs-all	proc		53
+nimgrp	add	cbuilderbase.html#add-procs-all	proc		14
+nimgrp	cintvalue	cbuilderbase.html#cIntValue-templates-all	template		32
